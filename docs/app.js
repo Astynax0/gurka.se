@@ -63,7 +63,7 @@
       mayDay: mmdd === "05-01"
     };
 
-    state.img = "image0.jpg";
+    state.img = "image0.jpg?v=1";
     state.imgDarkmode = state.img;
     if (state.color) {
       state.img = state.color + ".png";
