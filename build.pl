@@ -6,7 +6,7 @@ use File::Copy::Recursive qw/dircopy/;
 use File::Slurper qw/write_text/;
 
 my @sites = (
-	{ id => 'gurka', title => '&#x1F952; gurka.se' },
+	{ id => 'gurka', title => 'hunter.astyanax.se' },
 	{ id => 'persimon', title => 'persimon.se' },
 	{ id => 'champinjon', title => 'champinjon.se' },
 	{ id => 'potatis', title => 'potat.is' },

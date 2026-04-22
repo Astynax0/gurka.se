@@ -1,7 +1,7 @@
 (function() {
   "use strict";
 
-  const TITLE = "astyanax.se";
+  const TITLE = "hunter.astyanax.se";
   const GURKA_ID = "gurka";
   const COLORS = new Set(["blå", "lila", "röd", "orange", "rosa"]);
   const RICK_PATHS = new Set(["/highscore", "/admin", "/wp-admin", "/img"]);
@@ -63,7 +63,7 @@
       mayDay: mmdd === "05-01"
     };
 
-    state.img = "image0.jpg?v=1";
+    state.img = "image01.png";
     state.imgDarkmode = state.img;
     if (state.color) {
       state.img = state.color + ".png";
