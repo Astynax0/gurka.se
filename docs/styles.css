@@ -1,0 +1,130 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: white;
+  color: black;
+}
+
+body.darkmode {
+  background: #121212;
+  color: #aaa;
+}
+
+body.darkmode a {
+  color: #aaa;
+}
+
+html,
+body,
+div,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+#gurkburk {
+  width: 100%;
+  height: 70%;
+  margin-top: 10px;
+}
+
+#gurka,
+#rick {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rick {
+  background-image: url(/no-strangers.gif);
+  display: none;
+}
+
+body.darkmode #gurka {
+  background-image: var(--gurka-dark-image);
+}
+
+body.image-hidden #gurka {
+  display: none;
+}
+
+body.view-rick #gurka,
+body.view-rick #fot,
+body.view-rick .darkmode_knapp,
+body.view-rick #preload {
+  display: none;
+}
+
+body.view-rick #rick {
+  display: block;
+}
+
+#fot {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+}
+
+#fot li {
+  display: inline;
+  font-size: 16px;
+  padding: 0 8px;
+  font-family: "Roboto", sans-serif;
+  overflow-wrap: break-word;
+}
+
+#fot li.right_of_center {
+  border-left: 1px solid #aaa;
+}
+
+#fot li.left_of_center {
+  border-right: 1px solid #aaa;
+}
+
+#fot a {
+  text-decoration: none;
+}
+
+.warning {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.darkmode_knapp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.darkmode_knapp:hover {
+  cursor: pointer;
+}
+
+.darkmode #moon {
+  display: none;
+}
+
+body:not(.darkmode) #sun {
+  display: none;
+}
+
+#preload {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+}
