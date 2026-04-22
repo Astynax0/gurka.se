@@ -63,8 +63,8 @@
       mayDay: mmdd === "05-01"
     };
 
-    state.img = GURKA_ID + ".png";
-    state.imgDarkmode = "gurka-transp2.png";
+    state.img = "image0.jpg";
+    state.imgDarkmode = state.img;
     if (state.color) {
       state.img = state.color + ".png";
       state.imgDarkmode = state.img;
